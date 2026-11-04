@@ -11,17 +11,19 @@
 		function secondHighest(arr) {
 			//Write your code here
 			let highest = -Infinity;
-			let secondhighest = -Infinity;
+		    let secondHighest = -Infinity;
 
-			for(let num of arr) {
-				if (num > highest) {
-					secondhighest = highest;
-					highest = num;
-				} else if (num < highest && num > secondHighest) {
-					secondhighest = num;
-				}
-			}
-			return secondhighest;
+    for (let num of arr) {
+        if (num > highest) {
+            secondHighest = highest;
+            highest = num;
+        } 
+        else if (num < highest && num > secondHighest) {
+            secondHighest = num;
+        }
+    }
+
+    return secondHighest;
 		}
 
 		function Main() {
